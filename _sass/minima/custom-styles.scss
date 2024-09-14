@@ -98,6 +98,8 @@
 
   .resume-card {
     position: relative;
+    width: 100%; /* Adjust as needed */
+    height: 500px; /* Adjust as needed */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -123,6 +125,12 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.6); /* Darkens the background image */
     z-index: -1; /* Places the overlay behind the content but above the background image */
+  }
+
+  .content {
+    position: relative;
+    z-index: 1; /* Ensures the content is above the overlay */
+    color: white; /* Example style for content */
   }
   
 
