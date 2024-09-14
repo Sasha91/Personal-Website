@@ -1,4 +1,6 @@
 exclude: [about.md, resume.md]
+url: "https://sasha91.github.io"
+baseurl: "/Personal-Website"
 
 title: Sasha Junker
 author:
