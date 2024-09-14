@@ -1,0 +1,275 @@
+// Placeholder to allow defining custom styles that override everything else.
+// (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+.page-content-resume {
+  flex: 1 0 auto;
+}
+
+.my-site-title {
+    font-weight: light;
+    font-size: x-large;
+    color: $text-color;
+
+    &:visited {
+        color: $text-color;
+      }
+}
+
+.skill-bar {
+    margin-bottom: 16px;
+    background-color: #666666;
+    color: black;
+    font-weight: bold;
+    font-size: small;
+    width: 100%;
+    border-radius: 10px;
+    background: repeating-linear-gradient( -45deg, #444444, #444444 5px, #666666 5px, #666666 15px );
+    
+    .skill-bar-level {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 12px;
+        background-color: rgba(56, 214, 77, 0.979);
+        border-radius: 10px;
+    }
+}
+
+.resume-headline {
+  padding-top: 8px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid;
+  border-color: $site-title-color;
+
+  h1 {
+    margin-bottom: 0px;
+  }
+}
+
+.font-w-light {
+  font-weight: light;
+
+  h1 {
+    font-weight: light;
+  }
+}
+
+.font-w-lighter {
+  font-weight: lighter;
+
+  h1 {
+    font-weight: lighter;
+  }
+}
+
+.bottom-border {
+  border-bottom: 1px solid;
+  border-color: $site-title-color;
+}
+
+.headline {
+    overflow: hidden;
+
+    .icon {
+        vertical-align: top;
+        width: 50px;
+        filter: invert(100%) sepia(0%) saturate(6430%) hue-rotate(301deg) brightness(80%) contrast(80%);
+        float:left; /* add this */
+    }
+    
+    .text {
+        vertical-align: bottom;
+        padding-top: 3px;
+        padding-left: 5px;
+        width: 300px;
+        overflow: hidden;
+    }
+}
+
+  .resume-card {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/img/header.webp);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .site-color {
+    background-color: $site-title-color;
+  }
+
+  .brand-color-dark {
+    background-color: $brand-color-dark;
+    color: $text-color-light;
+  }
+
+  .resume-card-text {
+    padding: 50px;
+    font-size: smaller;
+
+    h1 {
+      font-size: large;
+      margin-bottom: 0px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    .resume-contact-point {
+      font-size: 9pt;
+    }
+  }
+
+  .resume-card-padding {
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+
+  .resume-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .align-center {
+    text-align: center;
+  }
+
+  .resume-personal-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .resume-timeline {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    p {
+      margin: 0px;
+    }
+  }
+    
+  .timeline-item-year {
+    text-align: right;
+    padding-right: 20px;
+    font-size: smaller;
+    font-weight: bold;
+    padding-top: 5px;
+  }
+
+  .timeline-item-position {
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 6px;
+    font-size: medium;
+    font-weight: lighter;
+  }
+
+  .timeline-item-headline {
+    position: relative;
+    padding-left: 20px;
+    font-size: large;
+    font-weight: lighter;
+  }
+
+  .timeline-text {
+    position: relative;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: small;
+  }
+
+  .timeline-item-border {
+    border-left: 2px solid;
+    border-color: $site-title-color;
+  }
+
+  .timeline-item-headline svg {
+      position: absolute;
+      left: -4px;
+      top: 9px;
+      fill: $brand-color-dark;
+  }
+
+  .resume-skill {
+    .empty {
+      svg {
+        fill: $brand-color-light;
+      }
+    }
+
+    .fill {
+      svg {
+        fill: $site-title-color;
+      }
+    }
+  }
+
+  .resume-skill-grid {
+    display: grid;
+    grid-template-columns: 8% 8% 8% 8% 8%;
+  }
+
+  .resume-left {
+    width: 40%;
+  }
+
+  .resume-right {
+    width: 60%;
+  }
+
+  .hide-on-desktop {
+    display: none;
+  }
+
+  .hide-on-mobile {
+    display: block;
+  }
+
+  .wrapper-small {
+    width: 740px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  @media screen and (max-width: 600px) {
+
+    .hide-on-desktop {
+      display: block;
+    }
+
+    .hide-on-mobile {
+      display: none;
+    }
+
+    .resume-grid {
+      display: grid;
+      grid-template-columns: 100%;
+    }
+
+    .wrapper {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .wrapper-small {
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .resume {
+      flex-direction: column;
+    }
+
+    .resume-left {
+      background-color: $brand-color-dark;
+      width: 100%;
+    }
+  
+    .resume-right {
+      width: 100%;
+    }
+  }

@@ -1,0 +1,26 @@
+<script src="/assets/js/resume.js"></script>
+
+<div class="resume">
+    {% include resume-card.html %}
+    <div class="resume-social-icons site-color hide-on-mobile">
+        <div class="wrapper">
+            <div class="social-links brand-color-dark">
+                {%- include social-light.html -%}
+            </div>
+        </div>
+    </div>
+    <div class="site-color">
+        <div class="wrapper">
+            <div class="resume-personal-text align-center">
+                <h1>Hi! I'm Sasha</h1>
+                <p>
+                    A very inspiring text about me, myself and I
+                </p>
+            </div>
+        </div>
+    </div>
+
+    {% include resume-experience.html %}
+    {% include resume-education.html %}
+    {% include resume/resume-skills.html %}
+</div>
